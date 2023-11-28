@@ -1,0 +1,71 @@
+ul.menu{
+    width: 80vw;
+    padding: 0;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul.menu li{
+    width: 10em;
+    height: 3em;
+    background-color: #B5C4B9;
+    border: 3px solid #786a2d;
+    border-style:groove;
+    text-align: center;
+    margin-top: 35%;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ul.menu li a{
+    display: block;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color: darkslateblue;
+}
+
+ul.menu > li:first-child{
+    border-top-left-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;
+}
+ul.menu > li:last-child{
+    border-top-right-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+
+}
+
+.bg{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/hjh705.github.io/images/2C294A39-9610-48A5-AE30-2B30846611FF_1_201_a.jpeg);
+    background-size: cover;
+    backdrop-filter: blur(3px);
+}
+
+ul.menu > li img.pic{
+    width: 50px;
+    align-items: center;
+    display: none;
+}
+
+ul.menu li a:hover+img.pic, ul.menu li img.pic:hover{
+    display:flex
+}
+#join:hover+img.pic, ul.menu li img.pic:hover{
+    display:flex
+}
+#join{
+    background-color: #B5C4B9 ;
+    border: none;
+    font-size: larger;
+    font-weight: bolder;
+    color: darkslateblue;
+}

@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" href="css/menu.css">
 </head>
-<body>
-    <h1>Welcome to My Homepage</h1>
-    <img src="/images/tiger.jpg" alt="">
-
-    
+<body class="bg">
+    <h1 style="text-align: center; margin-top: 10%;">Welcome to My Homepage</h1>
+    <ul class="menu">
+        
+        <li class="join">
+            <!-- <a href="/hjh705.github.io/join.html" >회원가입</a> -->
+            <!-- <button id="join" onclick="location.href ='/hjh705.github.io/join.html'">회원가입</button> -->
+            <button id="join" onclick="window.open('/hjh705.github.io/join.html','join', 'width=400px, height=500px')">회원가입</button>
+            <img src="/hjh705.github.io/images/pawprint.png" alt="" class="pic">
+        </li>
+        <li class="roadmap">
+            <a href="#">로드맵</a>
+            <img src="/hjh705.github.io/images/pawprint.png" alt="" class="pic">
+        </li>
+        <li class="introduce">
+            <a href="#">자기소개</a>
+            <img src="/hjh705.github.io/images/pawprint.png" alt="" class="pic">
+        </li>
+        <li class="trip">
+            <a href="#">여행지</a>
+            <img src="/hjh705.github.io/images/pawprint.png" alt="" class="pic">
+        </li>
+        
+    </ul>
+    <script src="/hjh705.github.io/js/index.js"></script>
 </body>
+  
 </html>

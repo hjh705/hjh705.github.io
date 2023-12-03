@@ -7,30 +7,29 @@
     <link rel="stylesheet" href="css/menu.css">
 </head>
 <body class="bg">
-    <h1 style="text-align: center; margin-top: 10%;">Welcome to My Homepage</h1>
+    <h1 style="text-align: center; margin-top: 3%;">Welcome to My Homepage</h1>
+    <hr>
     <ul class="menu">
-        
-        <li class="join">
-            <!-- <a href="/hjh705.github.io/join.html" >회원가입</a> -->
-            <!-- <button id="join" onclick="location.href ='/hjh705.github.io/join.html'">회원가입</button> -->
-            <button id="join" onclick="window.open('/hjh705.github.io/join.html','join', 'width=400px, height=500px')">회원가입</button>
-            <img src="/hjh705.github.io/images/pawprint.png" alt="" class="pic">
+        <li class="join" onclick="showJoin()">
+            <button id="join" >회원가입</button>
+            <img src="./images/pawprint.png" alt="" class="pic">
         </li>
         <li class="roadmap">
             <a href="#">로드맵</a>
-            <img src="/hjh705.github.io/images/pawprint.png" alt="" class="pic">
+            <img src="./images/pawprint.png" alt="" class="pic">
         </li>
         <li class="introduce">
             <a href="#">자기소개</a>
-            <img src="/hjh705.github.io/images/pawprint.png" alt="" class="pic">
+            <img src="./images/pawprint.png" alt="" class="pic">
         </li>
         <li class="trip">
             <a href="#">여행지</a>
-            <img src="/hjh705.github.io/images/pawprint.png" alt="" class="pic">
+            <img src="./images/pawprint.png" alt="" class="pic">
         </li>
-        
-    </ul>
-    <script src="/hjh705.github.io/js/index.js"></script>
+    </ul> 
+
+    <iframe id="joinWindow" src="./join.html" frameborder="0"></iframe>
+    <script src="js/index.js"></script>
 </body>
   
 </html>

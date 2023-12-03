@@ -9,14 +9,15 @@ ul.menu{
 }
 
 ul.menu li{
-    width: 10em;
-    height: 3em;
-    background-color: #B5C4B9;
+    width: 9em;
+    height: 7.5em;
+    background-color:rgba(255,255,255,0.5);
     border: 3px solid #786a2d;
     border-style:groove;
     text-align: center;
-    margin-top: 35%;
-    
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 50%;
 
     display: flex;
     justify-content: center;
@@ -30,22 +31,19 @@ ul.menu li a{
     font-size: larger;
     font-weight: bold;
     color: darkslateblue;
+
 }
 
 ul.menu > li:first-child{
-    border-top-left-radius: 0.7em;
-    border-bottom-left-radius: 0.7em;
+    margin-left: 0px;
 }
-ul.menu > li:last-child{
-    border-top-right-radius: 0.7em;
-    border-bottom-right-radius: 0.7em;
 
-}
+
 
 .bg{
     height: 100vh;
     width: 100vw;
-    background-image: url(/hjh705.github.io/images/2C294A39-9610-48A5-AE30-2B30846611FF_1_201_a.jpeg);
+    background-image: url(../images/2C294A39-9610-48A5-AE30-2B30846611FF_1_201_a.jpeg);
     background-size: cover;
     backdrop-filter: blur(3px);
 }
@@ -56,16 +54,35 @@ ul.menu > li img.pic{
     display: none;
 }
 
-ul.menu li a:hover+img.pic, ul.menu li img.pic:hover{
-    display:flex
+
+.join:hover .pic{
+    display: flex;
 }
-#join:hover+img.pic, ul.menu li img.pic:hover{
-    display:flex
+.roadmap:hover .pic{
+    display: flex;
 }
+.introduce:hover .pic{
+    display: flex;
+}
+.trip:hover .pic{
+    display: flex;
+}
+
 #join{
-    background-color: #B5C4B9 ;
     border: none;
     font-size: larger;
     font-weight: bolder;
     color: darkslateblue;
+}
+
+#joinWindow{
+    position: absolute; 
+    top: 30%; 
+    left: -30%; 
+    opacity: 0; 
+    background-color:rgba(255,255,255,0.7);
+    transition-duration: 1.4s;
+    transition-timing-function: ease-in;
+    width: 80%;
+    height: 65%;
 }

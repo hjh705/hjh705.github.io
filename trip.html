@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>여행지</title>
     <link rel="stylesheet" href="css/trip.css">
+    <style>
+        #photo{
+            width:60%;
+            align-items: center;
+            display: block;
+            margin: auto;
+        }
+        #button{
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1 id="title">여행</h1>
-    <hr>
+        <br><br><br>
+        <img id="photo" src="" alt="">
+        <button id="button" onclick="prev()" style="float: left; margin-left: 100px;">이전사진</button>
+        <button id="button" onclick="next()" style="float: right; margin-right: 100px;">다음사진</button>
 
-    
+    <script src="js/photo.js"></script>
 </body>
 </html>

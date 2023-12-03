@@ -78,7 +78,43 @@ ul.menu > li img.pic{
 #joinWindow{
     position: absolute; 
     top: 30%; 
-    left: -30%; 
+    left: 100%; 
+    opacity: 0; 
+    background-color:rgba(255,255,255,0.7);
+    transition-duration: 1.4s;
+    transition-timing-function: ease-in;
+    width: 80%;
+    height: 65%;
+}
+
+#introduceWindow{
+    position: absolute; 
+    top: 30%; 
+    left: 100%; 
+    opacity: 0; 
+    background-color:rgba(255,255,255,0.7);
+    transition-duration: 1.4s;
+    transition-timing-function: ease-in;
+    width: 80%;
+    height: 65%;
+}
+
+#roadmapWindow{
+    position: absolute; 
+    top: 30%; 
+    left: 100%; 
+    opacity: 0; 
+    background-color:rgba(255,255,255,0.7);
+    transition-duration: 1.4s;
+    transition-timing-function: ease-in;
+    width: 80%;
+    height: 65%;
+}
+
+#tripWindow{
+    position: absolute; 
+    top: 30%; 
+    left: 100%; 
     opacity: 0; 
     background-color:rgba(255,255,255,0.7);
     transition-duration: 1.4s;

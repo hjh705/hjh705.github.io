@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Introduce</title>
+    <style>
+    body {
+      display: flex;
+      perspective: 1000px;
+    }
+
+    .container {
+      position: relative;
+      transform-style: preserve-3d;
+    }
+
+    .rotating-text {
+      font-size: 5em;
+      color: #3498db;
+      position: absolute;
+      margin-top: 5%;
+      top: 5%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotateY(0deg);
+      animation: rotate 5s infinite linear;
+      transform-origin: center;
+      backface-visibility: hidden;
+      font-weight: bolder;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: translate(-50%, -50%) rotateY(0deg);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotateY(360deg);
+      }
+    }
+    </style>
 </head>
 <body>
-    
+    <div class="rotating-text">반갑읍니다</div>
+        <table
+            style="
+            margin-top: 5%;
+            margin-left: -13%;
+            font-size: 34px;
+            font-weight: 600;
+            border-spacing: 100px;
+           ">
+           <tr>
+            <th rowspan="6"><img src="images/longcat.png" 
+                style="width: 65%;"></th>
+           </tr>
+            <tr>
+                <td>NAME : 한준희</td>
+                <td rowspan="6"><img src="images/podong.png" style="margin-left: 50%;" alt=""></td>
+            </tr>
+            <tr>
+                <td>BIRTH : 91.07.05</td>
+            </tr>
+            <tr>
+                <td>EMAIL : ok9175@naver.com</td>
+            </tr>
+            <tr>
+                <td>HP : 010-7244-0388</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

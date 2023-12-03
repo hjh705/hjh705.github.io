@@ -14,21 +14,24 @@
             <button id="join" >회원가입</button>
             <img src="./images/pawprint.png" alt="" class="pic">
         </li>
-        <li class="roadmap">
+        <li class="roadmap" onclick="showRoadmap()">
             <a href="#">로드맵</a>
             <img src="./images/pawprint.png" alt="" class="pic">
         </li>
-        <li class="introduce">
+        <li class="introduce" onclick="showIntroduce()">
             <a href="#">자기소개</a>
             <img src="./images/pawprint.png" alt="" class="pic">
         </li>
-        <li class="trip">
+        <li class="trip" onclick="showTrip()">
             <a href="#">여행지</a>
             <img src="./images/pawprint.png" alt="" class="pic">
         </li>
     </ul> 
 
     <iframe id="joinWindow" src="./join.html" frameborder="0"></iframe>
+    <iframe id="roadmapWindow" src="./roadmap.html" frameborder="0"></iframe>
+    <iframe id="introduceWindow" src="./introduce.html" frameborder="0"></iframe>
+    <iframe id="tripWindow" src="./trip.html" frameborder="0"></iframe>
     <script src="js/index.js"></script>
 </body>
   

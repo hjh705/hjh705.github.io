@@ -3,6 +3,17 @@ const pw = document.querySelector('input#pw');
 const cPw = document.querySelector('input#cPw');
 const email = document.querySelector('input#email');
 
+const frm = document.memberFrm;
+
+const regExp = [/^[a-zA-Z0-9]{4,12}$/, [/^.{8,16}$/, /\d/, /[a-zA-Z]/, /[!@#$%^&*()]/], /^[가-힣]{2,}$/, /^010[0-9]{8}$/];
+
+document.memberFrm.onsubmit = (e) => {
+    console.log('input#id.value');
+    if(!regExp[0].test(id)){
+        alert('아이디는 영어와 숫자로만 작성해주세요')
+    }
+}
+
 class Member {
     constructor(id,pw,email){
         this.id = id;
@@ -40,5 +51,10 @@ const renderMembers = () => {
         `
     }, "");
 };
+
+
+document.memberFrm.onsubmit = (e) => {
+
+}
 
 renderMembers();
